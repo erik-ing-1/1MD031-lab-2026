@@ -1,1 +1,105 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Melltorp Burger</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body>
+        <header>
+            <h1>Välkommen till BurgerOnline</h1>
+        </header>
+    <main>
+        <p>En tjänst där du kan beställa hamburgare online!</p>
+
+        <section>
+            <h2>Beställning</h2>
+            <p>Här väljer du vilken hamburgare du vill damma</p>
+
+            <div style="display: inline-block;"> 
+                <h3>Coleslawburgare</h3>
+                <img src="https://media.torbjornstips.se/2026/05/C66318BB-5C71-414E-9090-D8572674DDF0.jpg" alt="Coleslawburgare" style="width: 200px;">
+                <ul>
+                    <li>Bröd</li>
+                    <li>Kött</li>
+                    <li>Coleslaw</li>
+                </ul>
+            </div>
+            
+            <div style="display: inline-block;"> 
+                <h3>Cheeseburgare</h3>
+                <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg" alt="Cheeseburgare" style="width: 200px;">
+                <ul>
+                    <li>Bröd</li>
+                    <li>Kött</li>
+                    <li>Ost</li>
+                </ul>
+
+            <div style="display: inline-block;"> 
+                <h3>Torskburgare</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6C7uzIojKyT8Ih2ntIsvwVCAt6yICAWq5QtNkTbqO0w&s=10" alt="Torskburgare" style="width: 200px;">
+                 <ul>
+                    <li>Bröd</li>
+                    <li>Torsk</li>
+                </ul>
+            </div>                                
+        </section>   
+        
+        <section>
+            <h2>Leverans</h2>
+            <p>Här anger du dina leveransuppgifter</p>
+
+            <p>
+                <label for="Full name">Full name</label><br>
+                <input type="text" id="Full name" name="Full name" required placeholder="First- and Last name">
+            </p>
+
+            <p>
+                <label for="E-mail">E-mail</label><br>
+                <input type="text" id="E-mail" name="E-mail" required placeholder="E-mail address">
+            </p>
+
+            <p>
+                <label for="Street">Street name</label><br>
+                <input type="text" id="Street" name="Street" required placeholder="Street name">
+            </p>
+
+            <p>
+                <label for="House">House</label><br>
+                <input type="text" id="House" name="House" required placeholder="House number">
+            </p>
+
+            <p>
+                <label for="Payment method">Payment method</label><br>
+                <select id="Payment method" name="Payment method">
+                    <option>Card</option>
+                    <option>Apple pay</option>
+                    <option>Klarna</option>
+                    <option>Swish</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="Gender">Gender</label><br>
+
+                <input type="radio" id="Male" name="Gender" value="male">
+                <label for="Male">Male</label><br>
+
+                <input type="radio" id="Female" name="Gender" value="female">
+                <label for="Female">Female</label><br>
+
+                <input type="radio" id="not-provided" name="Gender" value="not-provided" checked="checked">
+                <label for="Do not wish to provide">Do not wish to provide</label><br>
+            </p>
+        </section>  
+        <button type="submit">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAA7ealFH2sU8zohAeW2G4ljXPkwCiL7zJrYf2uEs3XQ&s=10"
+                alt="Varukorg"
+                style="width: 15px; height: auto;">
+                Submit order
+        </button>
+    </main>
+    <footer>
+       <p>Melltorp Burger 2026</p> 
+    </footer>
+   </body>
+</html>
