@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
     font-size: 12pt;
+    font-family: 'Arial';
 }
 
 p {
@@ -12,7 +13,7 @@ h1 {
     font-size: 36pt;
 }
 main, header, footer, nav ul {
-    max-width: 40rem;
+    max-width: 90%;
     margin: 0 auto 0 auto;
 }
 main {
@@ -27,18 +28,31 @@ main {
 } */
 
 header {
-    background-image: url("../img/polacks.jpg");
     background-size: cover;
     overflow: hidden;
     width: 100%;
-    height: 200px;
-    opacity: 0.5;
+    height: auto;
+    opacity: 1;
+    margin: 0 auto;
+    position: relative;
 }
 
+header img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+
 header h1 {
-    width:40rem;
-    margin: 0 auto;
+    font-size: 30pt;
+    width:100%;
+    margin: auto;
     text-align: center;
+    position: absolute;
+    color: rgb(226, 21, 137);
+    overflow: hidden;
+    top: 10px;
 }
 
 nav ul {
@@ -61,4 +75,44 @@ nav li {
 .Master {
     color: green;
     font-weight: bold;
+}
+
+.allergen {
+    font-weight: bold;
+}
+
+#ordering {
+    border: 2px dashed black;
+}
+
+#ordering > p, #ordering > h2 {
+    margin-left: 20px;
+}
+
+#delivery {
+    background-color: black;
+    color: white;
+    margin: 0px 0px 100px 0px;
+    border: 2px dashed red;
+}
+
+button:hover {
+   background-color: rgb(165, 41, 232);
+}
+
+.burger {
+    margin: 0px 2px 0px 2px;
+    padding: 2px;
+}
+
+.burger-wrapper {
+     display: grid;
+     grid-gap: 5px;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 6vw;
+    }
 }

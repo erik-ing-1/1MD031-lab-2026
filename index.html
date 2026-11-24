@@ -3,48 +3,56 @@
    <head>
        <title>Melltorp Burger</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="/css/style.css">
    </head>
    <body>
-        <header>
+        <header style="overflow: hidden;">
             <h1>Välkommen till BurgerOnline</h1>
+            <img src="https://images.imagerenderer.com/images-medium-large-5/ocean-drive-miami-florida-travelpix-ltd.jpg" alt="Miami-rubrikbild">
         </header>
     <main>
         <p>En tjänst där du kan beställa hamburgare online!</p>
 
-        <section>
+        <section id="ordering">
             <h2>Beställning</h2>
             <p>Här väljer du vilken hamburgare du vill damma</p>
-
-            <div style="display: inline-block;"> 
-                <h3>Coleslawburgare</h3>
-                <img src="https://media.torbjornstips.se/2026/05/C66318BB-5C71-414E-9090-D8572674DDF0.jpg" alt="Coleslawburgare" style="width: 200px;">
-                <ul>
-                    <li>Bröd</li>
-                    <li>Kött</li>
-                    <li>Coleslaw</li>
-                </ul>
-            </div>
             
-            <div style="display: inline-block;"> 
-                <h3>Cheeseburgare</h3>
-                <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg" alt="Cheeseburgare" style="width: 200px;">
-                <ul>
-                    <li>Bröd</li>
-                    <li>Kött</li>
-                    <li>Ost</li>
-                </ul>
+            <div class="burger-wrapper">
+            
+                <div id="Coleslawburgare" class="burger"> 
+                    <h3>Coleslawburgare</h3>
+                    <img src="https://media.torbjornstips.se/2026/05/C66318BB-5C71-414E-9090-D8572674DDF0.jpg" alt="Coleslawburgare" style="width: 200px; height: 200px; object-fit: cover;">
+                    <ul>
+                        <li><span class="allergen">Bröd</span></li>
+                        <li>Kött</li>
+                        <li><span class="allergen">Coleslaw</span></li>
+                    </ul>
+                </div>
+            
+                <div id="Cheeseburgare" class="burger"> 
+                    <h3>Cheeseburgare</h3>
+                    <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg" alt="Cheeseburgare" style="width: 200px; height: 200px; object-fit: cover;">
+                    <ul>
+                        <li><span class="allergen">Bröd</span></li>
+                        <li>Kött</li>
+                        <li><span class="allergen">Ost</span></li>
+                    </ul>
+                </div>
+            
+                <div id="Torskburgare" class="burger"> 
+                    <h3>Torskburgare</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6C7uzIojKyT8Ih2ntIsvwVCAt6yICAWq5QtNkTbqO0w&s=10" alt="Torskburgare" style="width: 200px; height: 200px; object-fit: cover;">
+                    <ul>
+                        <li><span class="allergen">Bröd</span></li>
+                        <li>Torsk</li>
+                        <li>Ketchup</li>
+                    </ul>
+                </div>                                
+            </div>
 
-            <div style="display: inline-block;"> 
-                <h3>Torskburgare</h3>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6C7uzIojKyT8Ih2ntIsvwVCAt6yICAWq5QtNkTbqO0w&s=10" alt="Torskburgare" style="width: 200px;">
-                 <ul>
-                    <li>Bröd</li>
-                    <li>Torsk</li>
-                </ul>
-            </div>                                
         </section>   
         
-        <section>
+        <section id="delivery">
             <h2>Leverans</h2>
             <p>Här anger du dina leveransuppgifter</p>
 
